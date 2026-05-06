@@ -18,7 +18,7 @@ export const EmailCapture = ({
         e.preventDefault();
         if (v.includes("@")) setDone(true);
       }}
-      className={`flex w-full max-w-md items-center gap-2 rounded-full p-1.5 ${
+      className={`flex w-full max-w-md min-w-0 items-center gap-2 rounded-full p-1.5 ${
         dark ? "bg-white/5 border border-white/15" : "bg-white border border-border"
       }`}
     >
@@ -28,7 +28,7 @@ export const EmailCapture = ({
         type="email"
         required
         placeholder={placeholder}
-        className={`flex-1 bg-transparent px-4 py-2 text-[15px] focus:outline-none ${
+        className={`min-w-0 flex-1 bg-transparent px-4 py-2 text-[15px] focus:outline-none ${
           dark ? "text-white placeholder:text-white/50" : "text-foreground placeholder:text-muted-foreground"
         }`}
       />
