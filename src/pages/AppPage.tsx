@@ -1,8 +1,7 @@
 import { PageShell } from "@/components/site/PageShell";
 import { PhoneMockup } from "@/components/site/PhoneMockup";
-import { EmailCapture } from "@/components/site/EmailCapture";
 import { features, explainLevels, girassolLeEpisodes } from "@/data/app";
-import { Play, Headphones, Mic, Bot, ChevronRight } from "lucide-react";
+import { Play, Headphones, Mic, Bot, ChevronRight, ExternalLink } from "lucide-react";
 import { useState } from "react";
 
 const AppPage = () => {
@@ -17,7 +16,7 @@ const AppPage = () => {
         <div className="absolute inset-0 grain opacity-25" />
         <div className="container-x relative grid lg:grid-cols-2 gap-16 items-center py-20">
           <div className="animate-fade-up">
-            <span className="pill bg-white/10 border border-white/15 mb-6">📱 Vem Aí</span>
+            <span className="pill bg-white/10 border border-white/15 mb-6">📱 Disponível Agora</span>
             <h1 className="font-display font-bold text-5xl md:text-7xl leading-[0.95]">
               Informação.<br />Debate.<br />
               <span className="text-gradient">Clareza.</span>
@@ -25,11 +24,16 @@ const AppPage = () => {
             <p className="mt-6 text-lg text-white/75 max-w-lg">
               O app que te explica o mundo ao teu nível — com especialistas, IA e áudio. Feito para quem quer entender Angola e o mundo, não apenas consumir notícias.
             </p>
-            <div className="mt-10 flex flex-wrap gap-3">
-              <span className="pill border border-white/20 text-white/80">App Store — Em Breve</span>
-              <span className="pill border border-white/20 text-white/80">Google Play — Em Breve</span>
+            <div className="mt-10">
+              <a
+                href="https://girassol-app.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary"
+              >
+                Try Out <ExternalLink size={15} />
+              </a>
             </div>
-            <div className="mt-8"><EmailCapture cta="Notificar-me" dark /></div>
           </div>
           <div className="flex justify-center"><PhoneMockup /></div>
         </div>
@@ -241,20 +245,20 @@ const AppPage = () => {
         <div className="absolute inset-0 grain" />
         <div className="container-x relative text-center max-w-2xl mx-auto">
           <h2 className="reveal font-display font-bold text-4xl md:text-6xl leading-[0.95]">
-            Sê o primeiro<br />a saber.
+            Experimenta<br />agora.
           </h2>
           <p className="reveal mt-5 text-white/85 text-lg">
-            O app está a ser construído. Deixa o teu email e avisamos quando lançarmos.
+            Debates, artigos com níveis de explicação, termos-chave e IA. Grátis, sem instalação.
           </p>
           <div className="reveal mt-10 flex justify-center">
-            <EmailCapture cta="Quero ser notificado" dark />
-          </div>
-          <div className="reveal mt-6 flex justify-center gap-6 text-sm text-white/50">
-            <span>App Store</span>
-            <span>·</span>
-            <span>Google Play</span>
-            <span>·</span>
-            <span>Em breve</span>
+            <a
+              href="https://girassol-app.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-white text-foreground px-8 py-4 font-display font-bold text-sm uppercase tracking-wide hover:bg-black hover:text-white transition-colors"
+            >
+              Try Out <ExternalLink size={15} />
+            </a>
           </div>
         </div>
       </section>
