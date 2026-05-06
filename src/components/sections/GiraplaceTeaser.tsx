@@ -21,7 +21,7 @@ export const GiraplaceTeaser = () => (
             <EmailCapture placeholder="O seu email" cta="Registar Interesse" />
           </div>
         </div>
-        <div className="reveal grid grid-cols-2 gap-5">
+        <div className="reveal grid grid-cols-2 gap-3 md:gap-5 overflow-hidden">
           {[
             "Lojas online em minutos.",
             "Pagamentos integrados.",
@@ -30,7 +30,7 @@ export const GiraplaceTeaser = () => (
           ].map((t, i) => (
             <div
               key={t}
-              className={`p-7 ${i % 3 === 0 ? "bg-surface-warm" : "bg-background border border-border"}`}
+              className={`p-4 md:p-7 min-w-0 ${i % 3 === 0 ? "bg-surface-warm" : "bg-background border border-border"}`}
               style={{ borderRadius: 20 }}
             >
               <div className="text-[11px] font-semibold uppercase tracking-[0.15em] text-primary">
