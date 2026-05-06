@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Projects/**)",
+      "Bash(npm create *)",
+      "Bash(npm install *)",
+      "Bash(npx tailwindcss *)",
+      "Bash(node node_modules/tailwindcss/lib/cli.js init -p)",
+      "Bash(cp \"c:\\\\Projects\\\\_RedeGirassol\\\\public\\\\favicon.png\" \"c:\\\\Projects\\\\_Girasightin\\\\public\\\\favicon.png\")",
+      "Bash(cp \"c:\\\\Projects\\\\_RedeGirassol\\\\src\\\\assets\\\\girassol-mark.png\" \"c:\\\\Projects\\\\_Girasightin\\\\src\\\\assets\\\\girassol-mark.png\")",
+      "Bash(mkdir -p \"c:\\\\Projects\\\\_Girasightin\\\\src\\\\assets\" \"c:\\\\Projects\\\\_Girasightin\\\\src\\\\context\" \"c:\\\\Projects\\\\_Girasightin\\\\src\\\\data\" \"c:\\\\Projects\\\\_Girasightin\\\\src\\\\components\\\\layout\" \"c:\\\\Projects\\\\_Girasightin\\\\src\\\\components\\\\ui\" \"c:\\\\Projects\\\\_Girasightin\\\\src\\\\pages\" && echo \"dirs ok\")",
+      "Bash(npm run *)"
+    ],
+    "additionalDirectories": [
+      "c:\\Projects\\_Girasightin\\src\\assets"
+    ]
+  }
+}
